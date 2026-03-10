@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Digital Agency | Transform Your Business</title>
+
+<!-- Tailwind CSS -->
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Google Fonts -->
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+body{
+font-family:'Inter',sans-serif;
+}
+
+.gradient-text{
+background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.gradient-bg{
+background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+}
+
+.hero-pattern{
+background-image:radial-gradient(circle at 2px 2px,rgba(255,255,255,0.05) 1px,transparent 0);
+background-size:40px 40px;
+}
+
+.service-card:hover{
+transform:translateY(-5px);
+box-shadow:0 20px 40px rgba(102,126,234,0.15);
+}
+
+.portfolio-item:hover{
+transform:scale(1.02);
+}
+
+.testimonial-card{
+background:linear-gradient(135deg,#1e293b 0%,#0f172a 100%);
+}
+
+.contact-form input,
+.contact-form textarea{
+transition:all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+outline:none;
+border-color:#667eea;
+box-shadow:0 0 0 3px rgba(102,126,234,0.1);
+}
+
+.scroll-smooth{
+scroll-behavior:smooth;
+}
+</style>
+
+</head>
+
+<body class="bg-gray-50 text-gray-900 scroll-smooth">
+
+<!-- Navigation -->
+
+<nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-16">
+
+<div class="flex items-center">
+<a href="#" class="flex items-center space-x-2">
+<div class="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center">
+<i class="fa-solid fa-bolt text-white text-xl"></i>
+</div>
+<span class="text-xl font-bold gradient-text">Creative</span>
+</a>
+</div>
+
+<div class="hidden md:flex items-center space-x-8">
+<a href="#services" class="text-gray-600 hover:text-purple-600 font-medium transition">Services</a>
+<a href="#portfolio" class="text-gray-600 hover:text-purple-600 font-medium transition">Portfolio</a>
+<a href="#testimonials" class="text-gray-600 hover:text-purple-600 font-medium transition">Testimonials</a>
+<a href="#contact" class="gradient-bg text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transition transform hover:scale-105">Get Started</a>
+</div>
+
+<button id="mobile-menu-btn" class="md:hidden text-gray-600">
+<i class="fa-solid fa-bars text-2xl"></i>
+</button>
+
+</div>
+</div>
+
+<div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+<div class="px-4 py-4 space-y-3">
+<a href="#services" class="block">Services</a>
+<a href="#portfolio" class="block">Portfolio</a>
+<a href="#testimonials" class="block">Testimonials</a>
+<a href="#contact" class="block gradient-bg text-white px-6 py-2 rounded-full text-center">Get Started</a>
+</div>
+</div>
+
+</nav>
+
+<!-- Hero Section -->
+
+<section class="relative min-h-screen flex items-center justify-center hero-pattern overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 text-center">
+
+<h1 class="text-5xl md:text-7xl font-bold mb-6">
+We Create <span class="gradient-text">Digital Experiences</span>
+</h1>
+
+<p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+From stunning websites to powerful marketing campaigns, we help businesses grow through innovative digital solutions.
+</p>
+
+<a href="#contact" class="gradient-bg text-white px-8 py-4 rounded-full font-semibold text-lg">
+Start Your Project
+</a>
+
+</div>
+</section>
+
+<!-- Services -->
+
+<section id="services" class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4">
+
+<h2 class="text-4xl font-bold text-center mb-16">
+Our <span class="gradient-text">Services</span>
+</h2>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<div class="service-card bg-gray-50 p-8 rounded-2xl">
+<h3 class="text-2xl font-bold mb-4">Web Development</h3>
+<p class="text-gray-600">Modern responsive websites built with the latest technologies.</p>
+</div>
+
+<div class="service-card bg-gray-50 p-8 rounded-2xl">
+<h3 class="text-2xl font-bold mb-4">Digital Marketing</h3>
+<p class="text-gray-600">Strategies to increase traffic and drive conversions.</p>
+</div>
+
+<div class="service-card bg-gray-50 p-8 rounded-2xl">
+<h3 class="text-2xl font-bold mb-4">UI/UX Design</h3>
+<p class="text-gray-600">Beautiful interfaces that enhance user experience.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- Portfolio -->
+
+<section id="portfolio" class="py-20 bg-gray-50">
+<div class="max-w-7xl mx-auto px-4 text-center">
+
+<h2 class="text-4xl font-bold mb-12">
+Our <span class="gradient-text">Portfolio</span>
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="portfolio-item bg-white rounded-xl shadow">
+<img src="https://picsum.photos/400/250?1">
+<div class="p-6">
+<h3 class="font-bold">E-commerce Website</h3>
+</div>
+</div>
+
+<div class="portfolio-item bg-white rounded-xl shadow">
+<img src="https://picsum.photos/400/250?2">
+<div class="p-6">
+<h3 class="font-bold">SaaS Dashboard</h3>
+</div>
+</div>
+
+<div class="portfolio-item bg-white rounded-xl shadow">
+<img src="https://picsum.photos/400/250?3">
+<div class="p-6">
+<h3 class="font-bold">Mobile App UI</h3>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- Testimonials -->
+
+<section id="testimonials" class="py-20 bg-gray-900 text-white">
+
+<div class="max-w-6xl mx-auto text-center">
+
+<h2 class="text-4xl font-bold mb-12">What Clients Say</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="testimonial-card p-6 rounded-xl">
+<p>"Amazing team! Our website traffic doubled."</p>
+<h4 class="mt-4 font-semibold">John Doe</h4>
+</div>
+
+<div class="testimonial-card p-6 rounded-xl">
+<p>"Professional design and great communication."</p>
+<h4 class="mt-4 font-semibold">Sarah Lee</h4>
+</div>
+
+<div class="testimonial-card p-6 rounded-xl">
+<p>"Highly recommended for startups."</p>
+<h4 class="mt-4 font-semibold">Michael Brown</h4>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact" class="py-20 bg-white">
+
+<div class="max-w-4xl mx-auto text-center">
+
+<h2 class="text-4xl font-bold mb-8">Start Your Project</h2>
+
+<form class="contact-form space-y-4">
+
+<input type="text" placeholder="Your Name" class="w-full border p-3 rounded">
+
+<input type="email" placeholder="Email Address" class="w-full border p-3 rounded">
+
+<textarea rows="4" placeholder="Your Message" class="w-full border p-3 rounded"></textarea>
+
+<button class="gradient-bg text-white px-8 py-3 rounded-full">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer class="bg-gray-900 text-white text-center py-6">
+<p>© 2026 Creative Digital Agency | Built by Ayushman Singh</p>
+</footer>
+
+<script>
+const btn=document.getElementById("mobile-menu-btn")
+const menu=document.getElementById("mobile-menu")
+btn.onclick=()=>{
+menu.classList.toggle("hidden")
+}
+</script>
+
+</body>
+</html>
